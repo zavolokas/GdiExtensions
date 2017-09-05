@@ -8,20 +8,35 @@ namespace Zavolokas.GdiExtensions
 {
     public static class BitmapExtensions
     {
-        public static Bitmap ScaleTo(this Bitmap bmp, int width, int height, InterpolationMode interpolation)
+        /// <summary>
+        /// Scales an image to provided size.
+        /// </summary>
+        /// <param name="image">The image.</param>
+        /// <param name="width">The width.</param>
+        /// <param name="height">The height.</param>
+        /// <param name="interpolation">The interpolation.</param>
+        /// <returns></returns>
+        public static Bitmap ScaleTo(this Image image, int width, int height, InterpolationMode interpolation)
         {
             var result = new Bitmap(width, height);
             using (var g = Graphics.FromImage(result))
             {
                 g.InterpolationMode = interpolation;
-                g.DrawImage(bmp, new Rectangle(0, 0, width, height), new Rectangle(0, 0, bmp.Width, bmp.Height), GraphicsUnit.Pixel);
+                g.DrawImage(image, new Rectangle(0, 0, width, height), new Rectangle(0, 0, image.Width, image.Height), GraphicsUnit.Pixel);
             }
             return result;
         }
 
-        public static FileInfo SaveTo(this Bitmap bitmap, string path, ImageFormat format)
+        /// <summary>
+        /// Saves to.
+        /// </summary>
+        /// <param name="image">The image.</param>
+        /// <param name="path">The path.</param>
+        /// <param name="format">The format.</param>
+        /// <returns></returns>
+        public static FileInfo SaveTo(this Image image, string path, ImageFormat format)
         {
-            bitmap.Save(path, format);
+            image.Save(path, format);
             return new FileInfo(path);
         }
 

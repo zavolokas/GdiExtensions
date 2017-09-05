@@ -5,6 +5,10 @@ VisualStudioVersion = 15.0.26403.7
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Zavolokas.GdiExtensions", "Zavolokas.GdiExtensions\Zavolokas.GdiExtensions.csproj", "{A21EBF23-AC6B-4D02-B175-D2E85E172E92}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Samples", "Samples", "{DFEF4665-FB9F-4E7B-A278-24EB0FAE67DF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ScaleBitmap", "Samples\ScaleBitmap\ScaleBitmap.csproj", "{5ABBD5A0-BF35-4503-9E27-8E2ED62FA864}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,8 +19,15 @@ Global
 		{A21EBF23-AC6B-4D02-B175-D2E85E172E92}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A21EBF23-AC6B-4D02-B175-D2E85E172E92}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A21EBF23-AC6B-4D02-B175-D2E85E172E92}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5ABBD5A0-BF35-4503-9E27-8E2ED62FA864}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5ABBD5A0-BF35-4503-9E27-8E2ED62FA864}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5ABBD5A0-BF35-4503-9E27-8E2ED62FA864}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5ABBD5A0-BF35-4503-9E27-8E2ED62FA864}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{5ABBD5A0-BF35-4503-9E27-8E2ED62FA864} = {DFEF4665-FB9F-4E7B-A278-24EB0FAE67DF}
 	EndGlobalSection
 EndGlobal

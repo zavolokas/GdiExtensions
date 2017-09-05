@@ -6,3 +6,4 @@
   - Setting opacity
   - Merging
   - Channels copy
+  
