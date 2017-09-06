@@ -9,6 +9,12 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Samples", "Samples", "{DFEF
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ScaleBitmap", "Samples\ScaleBitmap\ScaleBitmap.csproj", "{5ABBD5A0-BF35-4503-9E27-8E2ED62FA864}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MergeImage", "Samples\MergeImage\MergeImage.csproj", "{8A9E388F-EACE-4A49-9AA7-CC34443B1CAC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CopyChannel", "Samples\CopyChannel\CopyChannel.csproj", "{A3612EB6-3A29-4E8D-985B-58C4CCA0F963}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SetOpacity", "Samples\SetOpacity\SetOpacity.csproj", "{3F26B272-C15E-4909-91C4-84B449DDC80E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -23,11 +29,26 @@ Global
 		{5ABBD5A0-BF35-4503-9E27-8E2ED62FA864}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5ABBD5A0-BF35-4503-9E27-8E2ED62FA864}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5ABBD5A0-BF35-4503-9E27-8E2ED62FA864}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8A9E388F-EACE-4A49-9AA7-CC34443B1CAC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8A9E388F-EACE-4A49-9AA7-CC34443B1CAC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8A9E388F-EACE-4A49-9AA7-CC34443B1CAC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8A9E388F-EACE-4A49-9AA7-CC34443B1CAC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A3612EB6-3A29-4E8D-985B-58C4CCA0F963}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A3612EB6-3A29-4E8D-985B-58C4CCA0F963}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A3612EB6-3A29-4E8D-985B-58C4CCA0F963}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A3612EB6-3A29-4E8D-985B-58C4CCA0F963}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3F26B272-C15E-4909-91C4-84B449DDC80E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3F26B272-C15E-4909-91C4-84B449DDC80E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3F26B272-C15E-4909-91C4-84B449DDC80E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3F26B272-C15E-4909-91C4-84B449DDC80E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{5ABBD5A0-BF35-4503-9E27-8E2ED62FA864} = {DFEF4665-FB9F-4E7B-A278-24EB0FAE67DF}
+		{8A9E388F-EACE-4A49-9AA7-CC34443B1CAC} = {DFEF4665-FB9F-4E7B-A278-24EB0FAE67DF}
+		{A3612EB6-3A29-4E8D-985B-58C4CCA0F963} = {DFEF4665-FB9F-4E7B-A278-24EB0FAE67DF}
+		{3F26B272-C15E-4909-91C4-84B449DDC80E} = {DFEF4665-FB9F-4E7B-A278-24EB0FAE67DF}
 	EndGlobalSection
 EndGlobal

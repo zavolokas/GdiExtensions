@@ -57,14 +57,15 @@ namespace Zavolokas.GdiExtensions
         /// <summary>
         /// Copys one of the ARGB channels from source bitmap to one of the ARGB channels of dest bitmap.
         /// </summary>
-        /// <param name="channelSource">Bitmap with a source ARGB channel.</param>
+        /// <param name="channelSource">Bitmap with a source RGBA channel.</param>
         /// <param name="dest">Destination bitmap.</param>
-        /// <param name="sourceChannel">Number of a source channel to copy. 3 - Alpha.</param>
-        /// <param name="destChannel">Number of a dest channel. 3 - Alpha.</param>
+        /// <param name="sourceChannel">Index of a source channel to copy. 3 - Alpha.</param>
+        /// <param name="destChannel">Index of a dest channel. 3 - Alpha.</param>
         public static void CopyChannel(this Bitmap dest, int destChannel, Bitmap channelSource, int sourceChannel)
         {
             if (channelSource.Size != dest.Size)
                 throw new ArgumentException();
+
             var r = new Rectangle(Point.Empty, channelSource.Size);
             var bdSrc = channelSource.LockBits(r, ImageLockMode.ReadOnly, PixelFormat.Format32bppArgb);
             var bdDst = dest.LockBits(r, ImageLockMode.ReadWrite, PixelFormat.Format32bppArgb);
