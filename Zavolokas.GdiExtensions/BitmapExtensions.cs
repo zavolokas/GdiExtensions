@@ -16,7 +16,7 @@ namespace Zavolokas.GdiExtensions
         /// <param name="height">The height.</param>
         /// <param name="interpolation">The interpolation.</param>
         /// <returns></returns>
-        public static T CloneWithScaleTo<T>(this T image, int width, int height, InterpolationMode interpolation)
+        public static T CloneWithScaleTo<T>(this T image, int width, int height, InterpolationMode interpolation = InterpolationMode.Default)
             where T: Image
         {
             var result = new Bitmap(width, height);
