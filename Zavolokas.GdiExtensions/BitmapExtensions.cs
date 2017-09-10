@@ -16,7 +16,8 @@ namespace Zavolokas.GdiExtensions
         /// <param name="height">The height.</param>
         /// <param name="interpolation">The interpolation.</param>
         /// <returns></returns>
-        public static Bitmap ScaleTo(this Image image, int width, int height, InterpolationMode interpolation)
+        public static T ScaleTo<T>(this T image, int width, int height, InterpolationMode interpolation)
+            where T: Image
         {
             var result = new Bitmap(width, height);
             using (var g = Graphics.FromImage(result))
@@ -24,7 +25,7 @@ namespace Zavolokas.GdiExtensions
                 g.InterpolationMode = interpolation;
                 g.DrawImage(image, new Rectangle(0, 0, width, height), new Rectangle(0, 0, image.Width, image.Height), GraphicsUnit.Pixel);
             }
-            return result;
+            return (T)(Image)result;
         }
 
         /// <summary>
@@ -116,12 +117,18 @@ namespace Zavolokas.GdiExtensions
             return (T)(Image)output;
         }
 
-        public static byte[] GetBytes(this Bitmap bitmap)
+        /// <summary>
+        /// Gets the bytes of the image in a specified image format(JPEG by default).
+        /// </summary>
+        /// <param name="image">The image.</param>
+        /// <param name="format">The image format.</param>
+        /// <returns></returns>
+        public static byte[] GetBytes(this Image image, ImageFormat format = null)
         {
             byte[] result;
             using (var ms = new MemoryStream())
             {
-                bitmap.Save(ms, ImageFormat.Jpeg);
+                image.Save(ms, format ?? ImageFormat.Jpeg);
                 result = ms.ToArray();
             }
             return result;
