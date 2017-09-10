@@ -11,11 +11,12 @@ namespace MergeImage
         {
             const string resultPath = @"..\..\out.png";
 
-            using (var bitmap1 = new Bitmap(@"..\..\..\Images\m015.png"))
-            using (var bitmap2 = new Bitmap(@"..\..\..\Images\m016.png"))
+            using (var dest = new Bitmap(@"..\..\..\Images\m015.png"))
+            using (var source = new Bitmap(@"..\..\..\Images\m016.png"))
             {
-                bitmap1.MegreWithImage(bitmap2);
-                bitmap1.SaveTo(resultPath, ImageFormat.Png)
+                dest
+                    .DrawImageWithFit(source)
+                    .SaveTo(resultPath, ImageFormat.Png)
                     .ShowFile();
             }
         }

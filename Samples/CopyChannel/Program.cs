@@ -11,12 +11,14 @@ namespace CopyChannel
         {
             const string resultPath = @"..\..\out.png";
 
-            using (var shape = new Bitmap(@"..\..\..\Images\m023.png"))
-            using (var image = new Bitmap(@"..\..\..\Images\t023.jpg"))
+            using (var source = new Bitmap(@"..\..\..\Images\m023.png"))
+            using (var dest = new Bitmap(@"..\..\..\Images\t023.jpg"))
             {
-                image.CopyChannel(2, shape, 3);
+                const int dstChannelIndex = 2;
+                const int srcChannelIndex = 3;
 
-                image.SaveTo(resultPath, ImageFormat.Png)
+                dest.CopyChannel(dstChannelIndex, source, srcChannelIndex)
+                    .SaveTo(resultPath, ImageFormat.Png)
                     .ShowFile();
             }
         }

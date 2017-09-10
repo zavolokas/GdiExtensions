@@ -13,9 +13,9 @@ namespace ScaleBitmap
             const string resultPath = @"..\..\out.png";
 
             using (var bitmap = new Bitmap(@"..\..\..\Images\t023.jpg"))
+            using (var scaled = bitmap.CloneWithScaleTo(1000, 300, InterpolationMode.Low))
             {
-                bitmap
-                    .ScaleTo(1000, 300, InterpolationMode.Low)
+                scaled
                     .SaveTo(resultPath, ImageFormat.Png)
                     .ShowFile();
             }

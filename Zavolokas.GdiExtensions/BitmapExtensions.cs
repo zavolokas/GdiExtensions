@@ -16,7 +16,7 @@ namespace Zavolokas.GdiExtensions
         /// <param name="height">The height.</param>
         /// <param name="interpolation">The interpolation.</param>
         /// <returns></returns>
-        public static T ScaleTo<T>(this T image, int width, int height, InterpolationMode interpolation)
+        public static T CloneWithScaleTo<T>(this T image, int width, int height, InterpolationMode interpolation)
             where T: Image
         {
             var result = new Bitmap(width, height);
@@ -42,17 +42,18 @@ namespace Zavolokas.GdiExtensions
         }
 
         /// <summary>
-        /// Merges provided image with fit to the current one.
+        /// Draws provided image with fit to the current one.
         /// </summary>
         /// <param name="image"></param>
         /// <param name="source"></param>
-        public static void MegreWithImage<T>(this T image, T source)
+        public static T DrawImageWithFit<T>(this T image, T source)
             where T : Image
         {
             using (var gr = Graphics.FromImage(image))
             {
                 gr.DrawImage(source, new Rectangle(0, 0, image.Width, image.Height));
             }
+            return image;
         }
 
         /// <summary>
@@ -62,7 +63,7 @@ namespace Zavolokas.GdiExtensions
         /// <param name="dest">Destination bitmap.</param>
         /// <param name="sourceChannel">Index of a source channel to copy. 3 - Alpha.</param>
         /// <param name="destChannel">Index of a dest channel. 3 - Alpha.</param>
-        public static void CopyChannel(this Bitmap dest, int destChannel, Bitmap channelSource, int sourceChannel)
+        public static Bitmap CopyChannel(this Bitmap dest, int destChannel, Bitmap channelSource, int sourceChannel)
         {
             if (channelSource.Size != dest.Size)
                 throw new ArgumentException();
@@ -85,16 +86,17 @@ namespace Zavolokas.GdiExtensions
             }
             channelSource.UnlockBits(bdSrc);
             dest.UnlockBits(bdDst);
+            return dest;
         }
 
         /// <summary>
-        /// Sets an opacity to the image.
+        /// Clones the image and sets the opacity to the specefied.
         /// </summary>
         /// <typeparam name="T"></typeparam>
-        /// <param name="image"></param>
-        /// <param name="opacity"></param>
+        /// <param name="image">The image.</param>
+        /// <param name="opacity">The opacity.</param>
         /// <returns></returns>
-        public static T SetOpacity<T>(this T image, float opacity)
+        public static T CloneWithOpacity<T>(this T image, float opacity)
             where T : Image
         {
             var colorMatrix = new ColorMatrix { Matrix33 = opacity };

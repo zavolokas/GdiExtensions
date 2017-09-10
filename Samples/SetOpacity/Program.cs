@@ -12,9 +12,9 @@ namespace SetOpacity
             const string resultPath = @"..\..\out.png";
 
             using (var image = new Bitmap(@"..\..\..\Images\t023.jpg"))
+            using (var semiTransparent = image.CloneWithOpacity(0.3f))
             {
-                image
-                    .SetOpacity(0.3f)
+                semiTransparent
                     .SaveTo(resultPath, ImageFormat.Png)
                     .ShowFile();
             }
