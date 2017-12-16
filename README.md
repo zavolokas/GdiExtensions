@@ -3,6 +3,8 @@
 
 Contains extension methods to deal with `Image` classes.
 
+>  PM> Install-Package Zavolokas.GdiExtensions -Version 1.0.0
+
 ## Contents
 1. [Scaling](#scaling)
 2. [Opacity](#opacity)
