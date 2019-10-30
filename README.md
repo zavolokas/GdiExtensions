@@ -1,6 +1,7 @@
 # GDI+ Extensions
 [![license](https://img.shields.io/github/license/mashape/apistatus.svg?style=flat-square)]()
 [![Build Status](https://travis-ci.org/zavolokas/GdiExtensions.svg?branch=master)](https://travis-ci.org/zavolokas/GdiExtensions)
+[![Build Status](https://cloud.drone.io/api/badges/zavolokas/GdiExtensions/status.svg)](https://cloud.drone.io/zavolokas/GdiExtensions)
 
 Contains extension methods to deal with `Image` classes.
 
