@@ -9,10 +9,10 @@ namespace CopyChannel
     {
         static void Main(string[] args)
         {
-            const string resultPath = @"..\..\out.png";
+            const string resultPath = @"..\..\..\out.png";
 
-            using (var source = new Bitmap(@"..\..\..\Images\m023.png"))
-            using (var dest = new Bitmap(@"..\..\..\Images\t023.jpg"))
+            using (var source = new Bitmap(@"..\..\..\..\Images\m023.png"))
+            using (var dest = new Bitmap(@"..\..\..\..\Images\t023.jpg"))
             {
                 const int dstChannelIndex = 2;
                 const int srcChannelIndex = 3;

@@ -10,9 +10,9 @@ namespace ScaleBitmap
     {
         static void Main(string[] args)
         {
-            const string resultPath = @"..\..\out.png";
+            const string resultPath = @"..\..\..\out.png";
 
-            using (var bitmap = new Bitmap(@"..\..\..\Images\t023.jpg"))
+            using (var bitmap = new Bitmap(@"..\..\..\..\Images\t023.jpg"))
             using (var scaled = bitmap.CloneWithScaleTo(1000, 300, InterpolationMode.Low))
             {
                 scaled

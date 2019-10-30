@@ -1,19 +1,19 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.26403.7
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29326.143
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Zavolokas.GdiExtensions", "Zavolokas.GdiExtensions\Zavolokas.GdiExtensions.csproj", "{A21EBF23-AC6B-4D02-B175-D2E85E172E92}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Zavolokas.GdiExtensions", "Zavolokas.GdiExtensions\Zavolokas.GdiExtensions.csproj", "{A21EBF23-AC6B-4D02-B175-D2E85E172E92}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Samples", "Samples", "{DFEF4665-FB9F-4E7B-A278-24EB0FAE67DF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ScaleBitmap", "Samples\ScaleBitmap\ScaleBitmap.csproj", "{5ABBD5A0-BF35-4503-9E27-8E2ED62FA864}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ScaleBitmap", "Samples\ScaleBitmap\ScaleBitmap.csproj", "{5ABBD5A0-BF35-4503-9E27-8E2ED62FA864}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MergeImage", "Samples\MergeImage\MergeImage.csproj", "{8A9E388F-EACE-4A49-9AA7-CC34443B1CAC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MergeImage", "Samples\MergeImage\MergeImage.csproj", "{8A9E388F-EACE-4A49-9AA7-CC34443B1CAC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CopyChannel", "Samples\CopyChannel\CopyChannel.csproj", "{A3612EB6-3A29-4E8D-985B-58C4CCA0F963}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SetOpacity", "Samples\SetOpacity\SetOpacity.csproj", "{3F26B272-C15E-4909-91C4-84B449DDC80E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SetOpacity", "Samples\SetOpacity\SetOpacity.csproj", "{3F26B272-C15E-4909-91C4-84B449DDC80E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CopyChannel", "Samples\CopyChannel\CopyChannel.csproj", "{AFE72FE0-28E8-4500-8B12-2FE2702DBCDD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,14 +33,14 @@ Global
 		{8A9E388F-EACE-4A49-9AA7-CC34443B1CAC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8A9E388F-EACE-4A49-9AA7-CC34443B1CAC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8A9E388F-EACE-4A49-9AA7-CC34443B1CAC}.Release|Any CPU.Build.0 = Release|Any CPU
-		{A3612EB6-3A29-4E8D-985B-58C4CCA0F963}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A3612EB6-3A29-4E8D-985B-58C4CCA0F963}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{A3612EB6-3A29-4E8D-985B-58C4CCA0F963}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{A3612EB6-3A29-4E8D-985B-58C4CCA0F963}.Release|Any CPU.Build.0 = Release|Any CPU
 		{3F26B272-C15E-4909-91C4-84B449DDC80E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{3F26B272-C15E-4909-91C4-84B449DDC80E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3F26B272-C15E-4909-91C4-84B449DDC80E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3F26B272-C15E-4909-91C4-84B449DDC80E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AFE72FE0-28E8-4500-8B12-2FE2702DBCDD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AFE72FE0-28E8-4500-8B12-2FE2702DBCDD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AFE72FE0-28E8-4500-8B12-2FE2702DBCDD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AFE72FE0-28E8-4500-8B12-2FE2702DBCDD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -48,7 +48,10 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{5ABBD5A0-BF35-4503-9E27-8E2ED62FA864} = {DFEF4665-FB9F-4E7B-A278-24EB0FAE67DF}
 		{8A9E388F-EACE-4A49-9AA7-CC34443B1CAC} = {DFEF4665-FB9F-4E7B-A278-24EB0FAE67DF}
-		{A3612EB6-3A29-4E8D-985B-58C4CCA0F963} = {DFEF4665-FB9F-4E7B-A278-24EB0FAE67DF}
 		{3F26B272-C15E-4909-91C4-84B449DDC80E} = {DFEF4665-FB9F-4E7B-A278-24EB0FAE67DF}
+		{AFE72FE0-28E8-4500-8B12-2FE2702DBCDD} = {DFEF4665-FB9F-4E7B-A278-24EB0FAE67DF}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E9B52978-8C10-4AB8-89C1-DD9BF734ECF1}
 	EndGlobalSection
 EndGlobal

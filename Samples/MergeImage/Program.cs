@@ -9,10 +9,10 @@ namespace MergeImage
     {
         static void Main(string[] args)
         {
-            const string resultPath = @"..\..\out.png";
+            const string resultPath = @"..\..\..\out.png";
 
-            using (var dest = new Bitmap(@"..\..\..\Images\m015.png"))
-            using (var source = new Bitmap(@"..\..\..\Images\m016.png"))
+            using (var dest = new Bitmap(@"..\..\..\..\Images\m015.png"))
+            using (var source = new Bitmap(@"..\..\..\..\Images\m016.png"))
             {
                 dest
                     .DrawImageWithFit(source)

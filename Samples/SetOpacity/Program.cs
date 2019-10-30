@@ -9,9 +9,9 @@ namespace SetOpacity
     {
         static void Main(string[] args)
         {
-            const string resultPath = @"..\..\out.png";
+            const string resultPath = @"..\..\..\out.png";
 
-            using (var image = new Bitmap(@"..\..\..\Images\t023.jpg"))
+            using (var image = new Bitmap(@"..\..\..\..\Images\t023.jpg"))
             using (var semiTransparent = image.CloneWithOpacity(0.3f))
             {
                 semiTransparent
