@@ -9,7 +9,16 @@
         <PackageProjectUrl>https://github.com/zavolokas/GdiExtensions</PackageProjectUrl>
         <RepositoryUrl>https://github.com/zavolokas/GdiExtensions</RepositoryUrl>
         <Description>Contains extension methods to deal with Image classes.</Description>
-    </PropertyGroup>
+    
+    <PublishRepositoryUrl>true</PublishRepositoryUrl>
+    <IncludeSymbols>true</IncludeSymbols>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.SourceLink.GitHub" Version="1.0.0" PrivateAssets="All" />
+  </ItemGroup>
+
     <ItemGroup>
       <PackageReference Include="System.Drawing.Common" Version="4.6.0" />
     </ItemGroup>
